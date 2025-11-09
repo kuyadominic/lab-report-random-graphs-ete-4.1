@@ -1,0 +1,5 @@
+counts = randi([10 200],1,20); % sample counts
+bar(counts)
+xlabel('Graph rank (1–20)')
+ylabel('Frequency')
+title('Top 20 most frequent ER graphs'
