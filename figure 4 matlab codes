@@ -1,0 +1,10 @@
+block_sizes = [1 2 4 8];
+avg_bits_per_bit = [0.721 0.713 0.706 0.703]; % sample from earlier
+H_bit = 0.722;
+plot(block_sizes, avg_bits_per_bit, '-o')
+hold on
+yline(H_bit, '--r')
+xlabel('Block size (bits)')
+ylabel('Average bits per bit')
+title('Bernoulli sequence: bits per bit vs block size')
+grid on
