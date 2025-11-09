@@ -1,0 +1,10 @@
+p = 0.2; N = 2500; window = 50;
+bern = rand(1,N) < p;
+num_windows = floor(N/window);
+for i = 1:num_windows
+    counts(i) = sum(bern((i-1)*window+1:i*window));
+end
+histogram(counts)
+xlabel('Number of ones per window')
+ylabel('Frequency')
+title('Histogram of ones in Bernoulli sequence')
