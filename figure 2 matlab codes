@@ -1,0 +1,5 @@
+lens = randi([10 25],1,50); % sample codeword lengths
+histogram(lens)
+xlabel('Codeword length (bits)')
+ylabel('Number of symbols')
+title('Huffman codeword lengths for ER graphs')
