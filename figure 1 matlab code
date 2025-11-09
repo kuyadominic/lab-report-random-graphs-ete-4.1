@@ -1,0 +1,6 @@
+n = 6; p = 0.2;
+A = triu(rand(n)<p,1);
+A = A + A';
+G = graph(A);
+plot(G);
+title('Sample ER Graph n=6')
